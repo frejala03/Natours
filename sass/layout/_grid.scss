@@ -1,0 +1,13 @@
+.row {
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    // [class^=col] select all classes that start with col
+    // [class*='col-'] select all classes that contain col-
+    // [class&='col-'] select all classes that end with col-
+}
